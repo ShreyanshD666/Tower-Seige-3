@@ -9,6 +9,7 @@ var stand1,stand2;
 var polygon;
 var slingShot;
 var polygon_img;
+var score = 0;
 function preload(){
   polygon_img=loadImage("polygon.png");
 }
@@ -64,8 +65,10 @@ function setup() {
 
 }
 function draw() {
-  background(56,44,44); 
- 
+  background(56,44,44);
+  
+  text("Score: "+score,750,40);
+  
   //Engine.update(engine);
   text(mouseX + ',' + mouseY, 10, 15);
   textSize(20);
